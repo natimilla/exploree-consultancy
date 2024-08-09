@@ -75,4 +75,14 @@
         width:32px;
         height: 32px;
     }
+    .iconContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

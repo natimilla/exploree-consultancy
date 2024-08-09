@@ -9,10 +9,10 @@ function SecondSlide() {
       <div>
         <h>Who we are?</h>
         <p>
-          Universal Educational Consultants, incepted in 2018, is an Addis
+          Exploree Educational Consultants, incepted in 2020, is an Addis
           Ababa-based Overseas Educational Consultancy, dedicated to providing
           best solutions to the Ethiopian students seeking for education in
-          International educational institutions. Universal is one of the
+          International educational institutions. Exploree is one of the
           Leading Overseas Educational Consultants, acknowledged for providing
           best guidance and counselling to the students. You can study abroad in
           best educational hubs of the world, including, USA, Canada, Poland,
