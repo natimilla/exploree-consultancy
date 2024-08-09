@@ -1,0 +1,22 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.712);
+    border:none;
+    padding: 3rem 1rem 0.01rem 1rem;
+}
+.subContainer{
+    border:none;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer{ 
+    color:rgba(255, 255, 255, 0.479);
+    font-size: 15px;
+    margin-bottom: 0rem;
+}
+.footer a{
+    text-decoration: none;
+    color:#36b4d3;
+}

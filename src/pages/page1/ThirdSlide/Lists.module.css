@@ -1,0 +1,40 @@
+.listsContainer{
+    display: flex;
+    justify-content: space-around;
+    padding:1rem
+}
+.description{
+    text-align: justify;
+   
+}
+.serviceListContainer{
+    margin:1rem;
+    width:25rem;
+    
+}
+.heading{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 25px;
+    color:#36b4d3;
+}
+.horizontalLine{
+    width:5rem;
+    border:2px solid #36b4d3;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (max-width:1000px) {
+    .listsContainer{
+        flex-wrap: wrap;
+      
+    }
+    .serviceListContainer{
+        width:auto;
+    }
+    .heading {
+        font-size: 22px;
+        text-align: left;
+    }
+}

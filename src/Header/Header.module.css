@@ -1,0 +1,113 @@
+.container{
+    position: absolute;
+    border:none;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 1, 0.123);
+    z-index: 100;
+}
+.header{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+    flex-wrap: wrap;
+
+}
+.logoIcon{
+    max-width: 60px;
+    max-height: 50px;
+    display: inline;
+}
+.plane{
+    width: 60px;
+    height: 50px;
+    display: inline;
+}
+.header h1{
+    margin:1rem 1rem;
+    display: flex;
+    color: white;
+    align-items: center;
+
+}
+.colorVariant{
+    color:#36b4d3;
+    margin:0 5px;
+}
+.header a{
+    text-decoration: none;
+    color:white;
+    margin: 0 1rem;
+    font-weight: bold;
+    padding:0.2rem 1rem;
+    font-size: 15px;
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.header a:hover,.activeClass{
+    border-bottom: 3px solid #36b4d3;
+}
+.menuIcon{
+    max-width: 40px;
+    max-height: 30px;
+    display: none;
+    margin:0 0.5rem;
+}
+.cancelIcon{
+    width: 60px;
+    height: 50px;
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    .header{
+        justify-content: center;
+    }
+    .menuIcon{
+        display: inline;
+    }
+    .nav{
+        position: fixed;
+        top:0;
+        left:0;
+        opacity: 1;
+        display:block;
+        z-index:100;
+        background-color: #164c5a;
+        padding:1rem 2rem;
+        height:100dvh;
+        animation: intro 1s ease-in;
+    }
+    @keyframes intro {
+        0%{
+            left:-100%;
+            opacity:0;
+        }
+        100%{
+            left:0;
+            opacity: 1;
+        }
+    }
+    .header a{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .cancelIcon{
+        display: block;
+        margin:1rem auto;
+    }
+    .header h1{
+        margin:1rem 1rem;
+        font-size: 22px;
+    }
+    .logoIcon{
+        max-width: 40px;
+        max-height: 30px;
+       margin-right: 0.25rem;
+    }
+}

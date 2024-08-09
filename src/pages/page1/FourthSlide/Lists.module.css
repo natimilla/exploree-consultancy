@@ -1,0 +1,27 @@
+.listsContainer{
+    display: flex;
+    justify-content: space-evenly;
+     padding:1rem;
+}
+.listContainer{
+    background-color: #F5F5F5;
+    border-radius:5px;
+    padding: 2rem;
+    margin:1rem 2rem;
+}
+.listContainer h{
+    color:#36b4d3;
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+.listContainer p{
+    text-align: justify;
+}
+@media screen and (max-width:1000px) {
+    .listsContainer{
+        flex-wrap: wrap;
+       
+    }
+}

@@ -1,0 +1,37 @@
+.container {
+  padding: 5rem 1rem;
+}
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+
+  color: #36b4d3;
+}
+.subHeading h{
+    font-size:30px;
+    font-weight: bold;   
+}
+.subHeading{
+    margin-bottom: 1rem;
+}
+.headingContainer {
+  margin-bottom: 1rem;
+}
+.icon {
+  margin: 1rem 0;
+}
+.icon img {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+}
+.icon a {
+  text-decoration: none;
+  color: black;
+}
+.subSubHeading p{
+    font-size: 22px;
+}
+.subSubHeading h{
+    font-size: 20px;
+}

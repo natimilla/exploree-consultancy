@@ -1,0 +1,36 @@
+.form{
+    padding:1rem;
+    background-color: rgba(0, 0, 0, 0.397);
+    box-shadow: 0 0 2px white;
+}
+.form h{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+.form p{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.input{
+    width:20rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    border: none;
+}
+.button{
+    padding:0.75rem 2rem;
+    margin:0;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 15px;
+    border:1px solid black;
+}
+.button:hover{
+    box-shadow: 0 0 5PX white;
+}
+.input:focus{
+    outline: none;
+}

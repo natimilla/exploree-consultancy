@@ -1,0 +1,16 @@
+.container{
+    overflow: hidden;
+    height: 100dvh;
+    background-image: url('./../../../images/pexels-olia-danilevich-8093032 (1).jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@media screen and (max-width:1000px) {
+    .container{
+        background-image: url('./../../../images/phoneBackground.jpg');
+        background-position: center;
+        background-size: auto;
+    }
+}

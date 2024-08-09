@@ -1,0 +1,15 @@
+.container{
+    padding:3rem 3rem;
+}
+.headingContainer h{
+    font-size: 32px;
+    font-weight: bold;
+    color:#36b4d3;
+    margin-bottom: 2rem;
+}
+.container p{
+    text-align: justify;
+}
+.headingContainer{
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,20 @@
+.container{
+    background-image: url('./Images/—Pngtree—the\ ministry\ of\ foreign\ affairs_15702620.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;    
+    min-height:70dvh;
+}
+.heading{
+    font-size: 62px;
+    font-weight: bold;
+    color: white;
+
+}
+.subContainer{
+    background-color: rgba(0, 0, 0, 0.39);
+    min-height: 70dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
