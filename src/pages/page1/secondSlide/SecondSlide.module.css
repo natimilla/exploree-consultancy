@@ -36,13 +36,13 @@
 }
 @media screen and (max-width:1000px) {
     .container{
-        padding:3rem 1rem;
+        padding:3rem 5dvw;
     }
     .image{
-        border-radius: 0;
+        border-radius: 5px;
        margin:1rem auto;
-       max-width: 20rem;
-       max-height: 15rem;
+       max-width: 80dvw;
+       max-height: 40dvh;
     }
     .imgContainer{
         flex-wrap: wrap;
@@ -52,6 +52,6 @@
     }
     .imageContainer{
         border:none;
-        width:100%;
+        width:100dvw;
     }
 }

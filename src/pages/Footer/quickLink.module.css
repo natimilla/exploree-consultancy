@@ -13,3 +13,8 @@
 .Link:hover{
     color:#36b4d3;
 }
+@media screen and (max-width:1000px) {
+    .container{
+        padding-right: 10px;
+    }
+}

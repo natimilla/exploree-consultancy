@@ -15,7 +15,7 @@ function Appointment() {
   const [phoneNumber, setNumber] = useState("");
   const [AppointmentDate, setDate] = useState("");
   const [Message, setMessage] = useState("");
-  const dispatch= useDispatch()
+  const dispatch = useDispatch();
   const nameChangeHandler = (event) => {
     setName(event.target.value);
   };
@@ -31,100 +31,104 @@ function Appointment() {
   const MessageHandler = (event) => {
     setMessage(event.target.value);
   };
-  const ClientInformation=[]
-  const SubmitHandler = async(event) => {
+  const ClientInformation = [];
+  const SubmitHandler = async (event) => {
     event.preventDefault();
     dispatch(LoadingActions.LoadingStateHandler());
     ClientInformation.push({
-      name:name,
-      email:email,
-      appointment_date:new Date(AppointmentDate),
-      phonenumber:phoneNumber,
-      message:Message
-    })
-   
-    try{
-      const response=await fetch("https://exploree-consultancy-default-rtdb.firebaseio.com/clientInformation.json",{
-        method:'POST',
-        body:JSON.stringify(ClientInformation)
-      })
-       if(!response.ok){
-        throw new Error("failed to fetch")
-       
-       }
-       dispatch(ClientInformationAction.clientInformationHandler({
-        name:name,
-        email:email,
-        Number:phoneNumber,
-        Appointment:new Date(AppointmentDate),
-       }))
-       dispatch(ClientInformationAction.successStateHandler())
-       setName("");
-       setDate("");
-       setEmail("");
-       setMessage("");
-       setNumber("");
-  
+      name: name,
+      email: email,
+      appointment_date: new Date(AppointmentDate),
+      phonenumber: phoneNumber,
+      message: Message,
+    });
+
+    try {
+      const response = await fetch(
+        "https://exploree-consultancy-default-rtdb.firebaseio.com/clientInformation.json",
+        {
+          method: "POST",
+          body: JSON.stringify(ClientInformation),
+        }
+      );
+      if (!response.ok) {
+        throw new Error("failed to fetch");
+      }
+      dispatch(
+        ClientInformationAction.clientInformationHandler({
+          name: name,
+          email: email,
+          Number: phoneNumber,
+          Appointment: new Date(AppointmentDate),
+        })
+      );
+      dispatch(ClientInformationAction.successStateHandler());
+      setName("");
+      setDate("");
+      setEmail("");
+      setMessage("");
+      setNumber("");
+    } catch (Error) {
+      dispatch(LoadingActions.ErrorStateHandler());
     }
-     catch(Error){
-      dispatch(LoadingActions.ErrorStateHandler())
-     }   
   };
   const today = new Date();
   const todayFormatted = today.toISOString().slice(0, 10);
   return (
-    <div >
-      
+    <div>
       <form
-      className={classes.form}
-      data-aos="zoom-in-up"
-      onSubmit={SubmitHandler}
-    >
-      <h>Set Appointment</h>
-      <p>Your Name</p>
-      <input
-        type="text"
-        className={classes.input}
-        onChange={nameChangeHandler}
-        value={name}
-       
-      />
-      <p>Your Email</p>
-      <input
-        type="email"
-        className={classes.input}
-        onChange={emailChangeHandler}
-        value={email}
-       
-      />
-      <p>Phone number</p>
-      <input
-        type="number"
-        className={classes.input}
-        onChange={phoneNumberHandler}
-        value={phoneNumber}
-        
-      />
-      <p>Appointment Date</p>
-      <input
-        type="date"
-        min={todayFormatted}
-        className={classes.input}
-        onChange={AppointmentDateHandler}
-        value={AppointmentDate}
-        
-      />
-      <p>Your Message(optional)</p>
-      <textarea rows={5} className={classes.input} onChange={MessageHandler} value={Message} />
-      <div>
-        <button type="submit" className={classes.button}>
-          SUBMIT
-        </button>
-      </div>
-    </form>
-    
+        className={classes.form}
+        data-aos="zoom-in-up"
+        onSubmit={SubmitHandler}
+      >
+        <div className={classes.heading}>Set Appointment</div>
+        <p>Your Name</p>
+        <input
+          type="text"
+          className={classes.input}
+          onChange={nameChangeHandler}
+          value={name}
+          required
+        />
+        <p>Your Email</p>
+        <input
+          type="email"
+          className={classes.input}
+          onChange={emailChangeHandler}
+          value={email}
+          required
+        />
+        <p>Phone number</p>
+        <input
+          type="number"
+          className={classes.input}
+          onChange={phoneNumberHandler}
+          value={phoneNumber}
+          required
+        />
+        <p>Appointment Date</p>
+        <input
+          type="date"
+          min={todayFormatted}
+          className={classes.input}
+          onChange={AppointmentDateHandler}
+          value={AppointmentDate}
+          required
+        />
+        <p>Your Message(optional)</p>
+        <textarea
+          rows={5}
+          className={classes.input}
+          onChange={MessageHandler}
+          value={Message}
+        />
+        <div>
+          <button type="submit" className={classes.button}>
+            SUBMIT
+          </button>
+        </div>
+      </form>
     </div>
-    
   );
 }
 export default Appointment;

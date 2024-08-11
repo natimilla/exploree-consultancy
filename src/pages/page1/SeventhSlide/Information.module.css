@@ -5,6 +5,7 @@
 }
 .container{
     border:none;
+    margin:0;
 }
 .headingContainer{
     display: flex;
@@ -52,8 +53,8 @@
         width: 10rem;
     }
     .headingContainer{
-        justify-content:center;
-        padding:0;
+        justify-content:space-between;
+        padding-right:10dvw;
     }
     .iframe{
         width:300px;
@@ -72,16 +73,18 @@
     .linkContainer a img{
         width:32px;
         height: 32px;
+        margin: 15px;
     }
     .iconContainer{
         display: flex;
+        border:none;
         align-items: center;
-        justify-content: center;
+        justify-content: last baseline;
     }
     .map{
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin:1rem 0;
+        justify-content: last baseline;
+        margin:1rem 1rem;
     }
 }

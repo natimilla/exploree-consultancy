@@ -3,7 +3,7 @@
     background-color: rgba(0, 0, 0, 0.397);
     box-shadow: 0 0 2px white;
 }
-.form h{
+.heading{
     font-size: 22px;
     margin-bottom: 1rem;
 }
@@ -33,4 +33,9 @@
 }
 .input:focus{
     outline: none;
+}
+@media screen and (max-width:1000px) {
+    .input{
+       width: 50dvw;
+    }
 }

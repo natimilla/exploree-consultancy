@@ -14,11 +14,14 @@ function Information() {
   }, []);
   return (
     <div className={classes.container} data-aos="zoom-in-up">
+      <div className={classes.headingHeadingContainer}>
       <div className={classes.headingContainer}>
         {" "}
         <h>Get in Touch</h>
         <hr className={classes.horizontalLine} />
       </div>
+      </div>
+      
 
       <div className={classes.iconContainer}>
         <div>
@@ -59,6 +62,7 @@ function Information() {
           ></iframe>
         </div>
       </div>
+      
       <div className={classes.headingContainer}>
         {" "}
         <h>Follow us on</h>
