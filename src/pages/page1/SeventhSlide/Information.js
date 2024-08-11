@@ -68,10 +68,10 @@ function Information() {
         <a href="">
           <img src={facebookIcon} alt="facebook Icon" />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/exploreeconsultancy?igsh=YnVhOXhzaHZsMG8=">
           <img src={instagramIcon} alt="instagram Icon"></img>
         </a>
-        <a href="">
+        <a href="https://t.me/Exploreeconsultancy_user">
           <img src={telegramIcon} alt="telegram Icon" />
         </a>
       </div>

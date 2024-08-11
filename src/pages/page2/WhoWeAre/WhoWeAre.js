@@ -7,7 +7,7 @@ function WhoWeAre() {
     Aos.init({duration:1000})
   },[])
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id='why'>
       <div className={classes.headingContainer}>
         <h>Why Choose Universal?</h>
       </div>

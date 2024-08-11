@@ -22,7 +22,7 @@ function EighthSlide() {
   };
   return (
     <div className={classes.container}>
-      <h className={classes.heading}>FAQ</h>
+      <div className={classes.heading}>FAQ</div>
       <div className={classes.allContainer}>
       <div className={classes.faqContainer} onClick={SlideHandler1}>
         <div className={`${classes.imgContainer} ${openFaq1 ? classes.active: ' '}`}>

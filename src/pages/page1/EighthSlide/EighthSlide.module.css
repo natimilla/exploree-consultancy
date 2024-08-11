@@ -1,13 +1,13 @@
 .container{
     background-color: #F5F5F5  ;
-    padding:2rem;
+    padding:5rem 2rem;
 }
 .heading{
     color:#36b4d3;
     font-weight: bold;
     text-align: center;
     font-size: 32px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .allContainer{
     border-collapse: collapse;
@@ -26,6 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.imgContainer p{
+    margin-right: 10px;
 }
 .imgContainer.active{
     border-bottom: 1px solid rgba(0, 0, 0, 0.459);

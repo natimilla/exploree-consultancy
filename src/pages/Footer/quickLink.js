@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link'
 import classes from './quickLink.module.css';
 function QuickLink(){
     return <div>
         <h className={classes.heading}>Quick Links</h>
-        <p><Link to='' className={classes.Link}>Home</Link></p>
-        <p><Link to=''className={classes.Link}>Services</Link></p>
-        <p><Link to=''className={classes.Link}>Why Choose Exploree</Link></p>
-       <p><Link to=''className={classes.Link}>About us</Link></p>  
-        <p><Link to=''className={classes.Link}>Contact us</Link></p>
+        <p><HashLink to='/#firstSlide' className={classes.Link}>Home</HashLink></p>
+        <p><HashLink to='/#services'className={classes.Link}>Services</HashLink></p>
+        <p><HashLink to='/About#why'className={classes.Link}>Why Choose Exploree</HashLink></p>
+       <p><HashLink to='/About#firstSlide'className={classes.Link}>About us</HashLink></p>  
+        <p><HashLink to='/#contact'className={classes.Link}>Contact us</HashLink></p>
     </div>
 }
 export default QuickLink

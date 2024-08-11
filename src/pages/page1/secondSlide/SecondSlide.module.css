@@ -7,6 +7,9 @@
     align-items: center;
     
 }
+.color{
+    color:#36b4d3;
+}
 .image{
     max-width:30rem;
     max-height:15rem;
@@ -27,7 +30,8 @@
 }
 .link{
     text-decoration: none;
-    color: black;
+    color:#36b4d3;
+    font-weight: bold;
     font-size: 22px;
 }
 @media screen and (max-width:1000px) {
@@ -42,5 +46,12 @@
     }
     .imgContainer{
         flex-wrap: wrap;
+    }
+    .container p{
+        text-align: start;
+    }
+    .imageContainer{
+        border:none;
+        width:100%;
     }
 }

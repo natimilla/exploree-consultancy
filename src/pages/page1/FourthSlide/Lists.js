@@ -44,7 +44,7 @@ function ListsSlideFour() {
         <img src={img4} data-aos='zoom-in-up' alt="icon"/>
         <h data-aos='zoom-in-up'>Cost effective</h>
         <p data-aos='zoom-in-up'>
-          universal procedures are very favorable to encourage students to study
+          Exploree procedures are very favorable to encourage students to study
           abroad We have the most reasonable and fair service charge to
           encourage Ethiopian students
         </p>

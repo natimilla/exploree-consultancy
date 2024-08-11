@@ -10,3 +10,6 @@
     cursor: pointer;
     margin-bottom: 1rem;
 }
+.Link:hover{
+    color:#36b4d3;
+}

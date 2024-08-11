@@ -12,5 +12,8 @@
         background-image: url('./../../../images/phoneBackground.jpg');
         background-position: center;
         background-size: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

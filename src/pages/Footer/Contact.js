@@ -12,8 +12,8 @@ function Contact(){
     <h className={classes.heading}><span className={classes.headingSpan}>Exploree</span> Consultancy</h>
     <div>
     <a href='' className={classes.linkLogo}><img src={facebook}/></a>
-    <a href='' className={classes.linkLogo}><img src={instagram}/></a>
-    <a href='' className={classes.linkLogo}><img src={telegram}/></a>
+    <a href='https://www.instagram.com/exploreeconsultancy?igsh=YnVhOXhzaHZsMG8=' className={classes.linkLogo}><img src={instagram}/></a>
+    <a href='https://t.me/Exploreeconsultancy_user' className={classes.linkLogo}><img src={telegram}/></a>
     </div>
     <div className={classes.linkContainer}>
     <a href="tel:0942050924" className={classes.link}><img src={phone}/> +251 942050924</a>
