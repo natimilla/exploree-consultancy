@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exploree-consultancy/static/css/main.9f7a6e87.css",
-    "main.js": "/exploree-consultancy/static/js/main.44b234cf.js",
+    "main.css": "/exploree-consultancy/static/css/main.2602f548.css",
+    "main.js": "/exploree-consultancy/static/js/main.53d4f8ff.js",
     "static/js/453.df8de6de.chunk.js": "/exploree-consultancy/static/js/453.df8de6de.chunk.js",
     "static/media/pexels-suzyhazelwood-1122865.jpg": "/exploree-consultancy/static/media/pexels-suzyhazelwood-1122865.73c0b0b4d0aaf3b58bdc.jpg",
     "static/media/—Pngtree—the ministry of foreign affairs_15702620.png": "/exploree-consultancy/static/media/—Pngtree—the ministry of foreign affairs_15702620.172cc0ab3ccc4bfe3ebc.png",
+    "static/media/phone Graduation image.jpg": "/exploree-consultancy/static/media/phone Graduation image.fce2766117468d71509d.jpg",
     "static/media/pexels-marta-siedlecka-146156-586570.jpg": "/exploree-consultancy/static/media/pexels-marta-siedlecka-146156-586570.ed351c4b898b65a5ed84.jpg",
     "static/media/pexels-pixabay-267885.jpg": "/exploree-consultancy/static/media/pexels-pixabay-267885.8eb5ecbd5efd110a28c1.jpg",
     "static/media/pexels-olly-3760067.jpg": "/exploree-consultancy/static/media/pexels-olly-3760067.70ad8ad37984a3413ff9.jpg",
     "static/media/pexels-olia-danilevich-8093032 (1).jpg": "/exploree-consultancy/static/media/pexels-olia-danilevich-8093032 (1).622bb7ba118ca2a085fc.jpg",
-    "static/media/phoneBackground.jpg": "/exploree-consultancy/static/media/phoneBackground.087c678279adf3425616.jpg",
     "static/media/united-states-of-america-flag-large.jpg": "/exploree-consultancy/static/media/united-states-of-america-flag-large.378e150169e1cb486117.jpg",
     "static/media/turkey-flag-large.jpg": "/exploree-consultancy/static/media/turkey-flag-large.920eee078d574cd6b3fd.jpg",
     "static/media/canada-flag-large.jpg": "/exploree-consultancy/static/media/canada-flag-large.8d43f7b22613342eb3d7.jpg",
@@ -39,12 +39,12 @@
     "static/media/Rolling@1x-1.0s-200px-200px.svg": "/exploree-consultancy/static/media/Rolling@1x-1.0s-200px-200px.004417e41e2bf7f7a17d3b74d49217d4.svg",
     "static/media/plus.svg": "/exploree-consultancy/static/media/plus.d105c663d4e45990dc2ba518b231295e.svg",
     "static/media/menuIcon.svg": "/exploree-consultancy/static/media/menuIcon.783bc5ecc06d7f4379648452c44f8683.svg",
-    "main.9f7a6e87.css.map": "/exploree-consultancy/static/css/main.9f7a6e87.css.map",
-    "main.44b234cf.js.map": "/exploree-consultancy/static/js/main.44b234cf.js.map",
+    "main.2602f548.css.map": "/exploree-consultancy/static/css/main.2602f548.css.map",
+    "main.53d4f8ff.js.map": "/exploree-consultancy/static/js/main.53d4f8ff.js.map",
     "453.df8de6de.chunk.js.map": "/exploree-consultancy/static/js/453.df8de6de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f7a6e87.css",
-    "static/js/main.44b234cf.js"
+    "static/css/main.2602f548.css",
+    "static/js/main.53d4f8ff.js"
   ]
 }
