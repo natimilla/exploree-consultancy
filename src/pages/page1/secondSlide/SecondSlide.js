@@ -11,7 +11,7 @@ function SecondSlide() {
           </div>
         </div>
 
-        <div>
+        <div className={classes.passageContainer}>
           <h>
             Who <span className={classes.color}>we</span> are?
           </h>

@@ -58,6 +58,7 @@
     max-height: 30px;
     display: none;
     margin:0 0.5rem;
+    
 }
 .cancelIcon{
     width: 60px;
@@ -70,6 +71,7 @@
     }
     .menuIcon{
         display: inline;
+        
     }
     .nav{
         position: fixed;
@@ -104,10 +106,16 @@
     .header h1{
         margin:1rem 1rem;
         font-size: 22px;
+        font-weight: bold;  
     }
     .logoIcon{
         max-width: 40px;
         max-height: 30px;
        margin-right: 0.25rem;
+       
+    }
+    .container{
+        background-color: rgba(0, 0, 1, 0.25);
+        
     }
 }

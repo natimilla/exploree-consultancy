@@ -34,6 +34,12 @@
     font-weight: bold;
     font-size: 22px;
 }
+.passageContainer {
+    text-align: left;
+}
+.passageContainer h{
+    margin-bottom: 1rem;
+}
 @media screen and (max-width:1000px) {
     .container{
         padding:3rem 5dvw;
@@ -53,5 +59,8 @@
     .imageContainer{
         border:none;
         width:100dvw;
+    }
+    .passageContainer{
+        text-align: center;
     }
 }
