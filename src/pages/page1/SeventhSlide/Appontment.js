@@ -6,6 +6,8 @@ import Loading from "./Loading";
 import { useDispatch } from "react-redux";
 import { LoadingActions } from "../../../Store/LoadingDisplayContainer";
 import { ClientInformationAction } from "../../../Store/ClientInformation";
+import DatePicker from "react-datepicker";
+import 'react-datepicker/dist/react-datepicker.css';
 function Appointment() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -15,6 +17,7 @@ function Appointment() {
   const [phoneNumber, setNumber] = useState("");
   const [AppointmentDate, setDate] = useState("");
   const [Message, setMessage] = useState("");
+  const [disabledDates,setDisabledDates]=useState([])
   const dispatch = useDispatch();
   const nameChangeHandler = (event) => {
     setName(event.target.value);
@@ -25,8 +28,8 @@ function Appointment() {
   const phoneNumberHandler = (event) => {
     setNumber(event.target.value);
   };
-  const AppointmentDateHandler = (event) => {
-    setDate(event.target.value);
+  const AppointmentDateHandler = (date) => {
+    setDate(date);
   };
   const MessageHandler = (event) => {
     setMessage(event.target.value);
@@ -73,7 +76,29 @@ function Appointment() {
     }
   };
   const today = new Date();
-  const todayFormatted = today.toISOString().slice(0, 10);
+  useEffect(()=>{
+    const fetchDate=async()=>{
+      const response=await fetch('https://exploree-consultancy-default-rtdb.firebaseio.com/disableDates.json');
+      const data=await response.json();
+      const DUMMY_FILE=[];
+      for(const key in data){
+        for(let i=0;i<data[key].length;i++){
+          DUMMY_FILE.push({
+               disabled_date:new Date(data[key][i].disable_date)
+          })
+        }
+      }
+      setDisabledDates(DUMMY_FILE);
+      console.log(disabledDates)
+    }
+    fetchDate();
+    
+  },[])
+  const isDateDisabled = (date) => {
+    return disabledDates.some(disabledDate => 
+        date.toDateString() === new Date(disabledDate.disabled_date).toDateString()
+    );
+}
   return (
     <div>
       <form
@@ -107,12 +132,13 @@ function Appointment() {
           required
         />
         <p>Appointment Date</p>
-        <input
-          type="date"
-          min={todayFormatted}
-          className={classes.input}
+        <DatePicker
+          minDate={today}
+          selected={AppointmentDate}
           onChange={AppointmentDateHandler}
-          value={AppointmentDate}
+          placeholderText='Select Date'
+          className={classes.input}
+          filterDate={(date) => !isDateDisabled(date)}
           required
         />
         <p>Your Message(optional)</p>
