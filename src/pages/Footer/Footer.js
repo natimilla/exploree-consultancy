@@ -13,7 +13,7 @@ function Footer() {
       <div className={classes.footer}>
         <p>
           Exploree Educational consultant 2024 | All Rights Rserved | Powered By{" "}
-          <a href="https://t.me/NatiMilla">Nati Milla</a>
+          <a href="https://t.me/Exploreeconsultancy_user">Exploree Consultancy</a>
         </p>
       </div>
     </div>
