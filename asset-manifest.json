@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/exploree-consultancy/static/css/main.53922c39.css",
-    "main.js": "/exploree-consultancy/static/js/main.a2a85e9f.js",
+    "main.js": "/exploree-consultancy/static/js/main.a66842bb.js",
     "static/js/453.5b8daa7b.chunk.js": "/exploree-consultancy/static/js/453.5b8daa7b.chunk.js",
     "static/media/pexels-suzyhazelwood-1122865.jpg": "/exploree-consultancy/static/media/pexels-suzyhazelwood-1122865.73c0b0b4d0aaf3b58bdc.jpg",
     "static/media/—Pngtree—the ministry of foreign affairs_15702620.png": "/exploree-consultancy/static/media/—Pngtree—the ministry of foreign affairs_15702620.172cc0ab3ccc4bfe3ebc.png",
@@ -40,11 +40,11 @@
     "static/media/plus.svg": "/exploree-consultancy/static/media/plus.d105c663d4e45990dc2ba518b231295e.svg",
     "static/media/menuIcon.svg": "/exploree-consultancy/static/media/menuIcon.783bc5ecc06d7f4379648452c44f8683.svg",
     "main.53922c39.css.map": "/exploree-consultancy/static/css/main.53922c39.css.map",
-    "main.a2a85e9f.js.map": "/exploree-consultancy/static/js/main.a2a85e9f.js.map",
+    "main.a66842bb.js.map": "/exploree-consultancy/static/js/main.a66842bb.js.map",
     "453.5b8daa7b.chunk.js.map": "/exploree-consultancy/static/js/453.5b8daa7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53922c39.css",
-    "static/js/main.a2a85e9f.js"
+    "static/js/main.a66842bb.js"
   ]
 }
