@@ -44,7 +44,8 @@ Study in Canada you will receive an internationally recognized education from so
         img:China,
         explanation:'China is one of the countries with best economy and business in the world we have link with more than 80 universities all over china'
     }]
-    return <div className={classes.container}>
+    return <div className={classes.wholeContainer}>
+        <div className={classes.container}>
            {DUMMY_FILE.map((country)=>{
             return <div className={classes.subContainer}>
             <div><img src={country.img} className={classes.img} alt={`${country.title} image`}/></div>
@@ -52,6 +53,7 @@ Study in Canada you will receive an internationally recognized education from so
             <p className={classes.description} data-aos="zoom-in-up">{country.explanation}</p>
            </div>
            })}
+    </div>
     </div>
 }
 export default CountriesList;
